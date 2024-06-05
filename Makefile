@@ -57,10 +57,10 @@ anywhere: $(ANSAR) anywhere.access
 	ansar network client --connect-scope=GROUP --connect-file=anywhere.access
 
 run-server:
-	ansar --debug-level=DEBUG run server --group-name=server
+	ansar --debug-level=DEBUG run server --group-name=server --main-role=server
 
 run-client:
-	ansar --debug-level=CONSOLE run client --group-name=client
+	ansar --debug-level=CONSOLE run client --group-name=client --main-role=client
 
 start-server:
 	ansar start server --group-name=server
